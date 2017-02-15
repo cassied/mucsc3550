@@ -1,7 +1,6 @@
 package com.mucsc3550.cassie.framework;
 
 import com.mucsc3550.cassie.framework.Input.TouchEvent;
-
 import java.util.List;
 
 /**
@@ -38,13 +37,11 @@ public class MainMenuScreen extends Screen {
                 }
             }
         }
-
     }
 
     @Override
     public void present(float deltaTime) {
         Graphics g = game.getGraphics();
-
         g.drawPixmap(Assets.background, 0, 0);
         g.drawPixmap(Assets.logo, 32, 20);
         g.drawPixmap(Assets.mainMenu, 64, 220);
@@ -61,14 +58,10 @@ public class MainMenuScreen extends Screen {
     }
 
     @Override
-    public void resume() {
-
-    }
+    public void resume() {}
 
     @Override
-    public void dispose() {
-
-    }
+    public void dispose() {}
 
     private boolean inBounds(TouchEvent event, int x, int y, int width, int height) {
         if(event.x > x && event.x < x + width - 1 && event.y > y && event.y < y + height - 1) {

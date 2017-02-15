@@ -1,16 +1,16 @@
 package com.mucsc3550.cassie.framework.impl;
 
 import android.content.Context;
+import android.view.MotionEvent;
 import android.view.View;
 
 import com.mucsc3550.cassie.framework.Input;
-import com.mucsc3550.cassie.framework.TouchHandler;
 
 import java.util.List;
 
 public class AndroidInput implements Input {
 
-    TouchHandler touchHandler;
+    Input touchHandler;
     public AndroidInput(Context context, View view, float scaleX, float scaleY) {
         touchHandler = new SingleTouchHandler(view, scaleX, scaleY);
     }
@@ -32,4 +32,8 @@ public class AndroidInput implements Input {
         return touchHandler.getTouchEvents();
     }
 
+    @Override
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+        return false;
+    }
 }

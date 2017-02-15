@@ -4,13 +4,13 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import com.mucsc3550.cassie.framework.Input.TouchEvent;
-import com.mucsc3550.cassie.framework.TouchHandler;
+import com.mucsc3550.cassie.framework.Input;
 import com.mucsc3550.cassie.framework.impl.Pool.PoolObjectFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class SingleTouchHandler implements TouchHandler {
+public class SingleTouchHandler implements Input {
     boolean isTouched;
     int touchX;
     int touchY;
@@ -80,8 +80,8 @@ public class SingleTouchHandler implements TouchHandler {
     }
     public List<TouchEvent> getTouchEvents() {
         synchronized(this) {
-            int len = touchEvents.size();
-            for( int i = 0; i < len; i++ )
+            int length = touchEvents.size();
+            for( int i = 0; i < length; i++ )
                 touchEventPool.free(touchEvents.get(i));
             touchEvents.clear();
             touchEvents.addAll(touchEventsBuffer);

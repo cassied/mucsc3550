@@ -37,22 +37,11 @@ public class LoadingScreen extends Screen {
     }
 
     @Override
-    public void present(float deltaTime) {
-
-    }
-
+    public void present(float deltaTime) {}
     @Override
-    public void pause() {
-
-    }
-
+    public void pause() {}
     @Override
-    public void resume() {
-
-    }
-
+    public void resume() {}
     @Override
-    public void dispose() {
-
-    }
+    public void dispose() {}
 }

@@ -2,9 +2,7 @@ package com.mucsc3550.cassie.framework.impl;
 
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
-
 import com.mucsc3550.cassie.framework.Music;
-
 import java.io.IOException;
 
 public class AndroidMusic implements Music, MediaPlayer.OnCompletionListener {
