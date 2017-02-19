@@ -32,7 +32,7 @@ public class MainMenuScreen extends Screen {
                     if(Settings.soundEnabled) Assets.click.play(1);
                 }
                 if(inBounds(event, 0, 220 + 84, 192, 42)) {
-                    //game.setScreen(new HelpScreen(game));
+                    game.setScreen(new HelpScreen(game));
                     if(Settings.soundEnabled) Assets.click.play(1);
                 }
             }
@@ -47,9 +47,9 @@ public class MainMenuScreen extends Screen {
         g.drawPixmap(Assets.mainMenu, 64, 220);
 
         if(Settings.soundEnabled)
-            g.drawPixmap(Assets.buttons, 0, 350,0,0,64,64);
+            g.drawPixmap(Assets.buttons, 0, 410,0,0,64,64);
         else
-            g.drawPixmap(Assets.buttons, 0, 350,64,0,64,64);
+            g.drawPixmap(Assets.buttons, 0, 410,64,0,64,64);
     }
 
     @Override

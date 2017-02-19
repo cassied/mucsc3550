@@ -142,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="f0e8e90bd3828ee787c6e32aef7d9f359652b6f4">
+        sha1="d8b3341b8b9947ecb74446ba0b4c2bbbc3f60e44">
         <dex dex="/Users/cassie/Documents/Cassie/Teaching/CSC-3550/framework/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e5e835f780c7d795cd16d374b592a18ac49b20c8/classes.dex" />
     </item>
     <item
@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="102d047bba69225584808741bcccd7f68ce2edfd">
+        sha1="da654862ad5ce6aaccf5d8b0a8b179729afac29f">
         <dex dex="/Users/cassie/Documents/Cassie/Teaching/CSC-3550/framework/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ca76292cf69770b15d3106e758a9613d424fd5ff/classes.dex" />
     </item>
 
