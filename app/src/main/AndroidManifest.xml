@@ -6,7 +6,7 @@
     android:installLocation="preferExternal">
     <application android:icon="@mipmap/ic_launcher"
         android:label="Awesomnium">
-        <activity android:name="com.mucsc3550.cassie.framework.MrNomGame"
+        <activity android:name="com.mucsc3550.cassie.framework.Limbitless"
             android:label="Awesomnium"
             android:configChanges="keyboard|keyboardHidden|orientation">
             <intent-filter>

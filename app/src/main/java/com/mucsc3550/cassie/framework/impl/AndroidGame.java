@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Window;
 import android.view.WindowManager;
-
 import com.mucsc3550.cassie.framework.Audio;
 import com.mucsc3550.cassie.framework.FileIO;
 import com.mucsc3550.cassie.framework.Game;

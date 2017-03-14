@@ -1,11 +1,9 @@
 package com.mucsc3550.cassie.framework.impl;
-
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-
 
 public class AndroidFastRenderView extends SurfaceView implements Runnable {
     AndroidGame game;
@@ -28,8 +26,7 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
         Rect dstRect = new Rect();
         long startTime = System.nanoTime();
         while(running) {
-            if(!holder.getSurface().isValid())
-                continue;
+            if(!holder.getSurface().isValid()) continue;
 
             float deltaTime = (System.nanoTime()-startTime) / 1000000000.0f;
             startTime = System.nanoTime();
@@ -49,10 +46,7 @@ public class AndroidFastRenderView extends SurfaceView implements Runnable {
             try {
                 renderThread.join();
                 return;
-            } catch (InterruptedException e) {
-                // retry
-            }
+            } catch (InterruptedException e) { /* retry */ }
         }
     }
 }
-
