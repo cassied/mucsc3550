@@ -7,9 +7,9 @@ public abstract class Screen {
         this.game = game;
     }
 
-    public abstract void update(float deltaTime);
+    public abstract void update(double deltaTime);
 
-    public abstract void present(float deltaTime);
+    public abstract void present(double deltaTime);
 
     public abstract void pause();
 

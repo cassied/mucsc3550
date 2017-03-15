@@ -4,10 +4,14 @@
     android:versionCode="1"
     android:versionName="1.0"
     android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application android:icon="@mipmap/ic_launcher"
-        android:label="Awesomnium">
+        android:label="Limbitless">
         <activity android:name="com.mucsc3550.cassie.framework.Limbitless"
-            android:label="Awesomnium"
+            android:label="Limbitless"
             android:configChanges="keyboard|keyboardHidden|orientation">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,6 +19,5 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 </manifest>

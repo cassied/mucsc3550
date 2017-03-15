@@ -2,12 +2,10 @@ package com.mucsc3550.cassie.framework;
 
 import android.content.res.AssetFileDescriptor;
 import android.text.method.Touch;
-
 import com.mucsc3550.cassie.framework.Graphics;
 import com.mucsc3550.cassie.framework.Game;
 import com.mucsc3550.cassie.framework.Screen;
 import com.mucsc3550.cassie.framework.Input.TouchEvent;
-
 import java.util.List;
 import java.util.Set;
 
@@ -23,7 +21,7 @@ public class HighScoreScreen extends Screen {
     }
 
     @Override
-    public void update(float deltaTime) {
+    public void update(double deltaTime) {
         List<TouchEvent> touchEvents = game.getInput().getTouchEvents();
 
         int len = touchEvents.size();
@@ -41,13 +39,13 @@ public class HighScoreScreen extends Screen {
     }
 
     @Override
-    public void present(float deltaTime) {
+    public void present(double deltaTime) {
         Graphics g = game.getGraphics();
         g.drawPixmap(Assets.background, 0, 0);
         g.drawPixmap(Assets.mainMenu, 53, 20, 0, 65, 220, 55);
 
         int y = 100;
-        for(int i = 0; i < 5; i++) {
+        for(int i = 4; i >= 0; i--) {
             drawText(g, lines[i], 20, y);
             y+= 50;
         }
@@ -82,17 +80,11 @@ public class HighScoreScreen extends Screen {
     }
 
     @Override
-    public void pause() {
-
-    }
+    public void pause() {}
 
     @Override
-    public void resume() {
-
-    }
+    public void resume() {}
 
     @Override
-    public void dispose() {
-
-    }
+    public void dispose() {}
 }

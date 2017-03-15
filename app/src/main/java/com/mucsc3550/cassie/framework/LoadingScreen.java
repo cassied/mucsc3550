@@ -5,7 +5,7 @@ public class LoadingScreen extends Screen {
         super(game);
     }
 
-    public void update(float deltaTime) {
+    public void update(double deltaTime) {
         Graphics g = game.getGraphics();
         Assets.background = g.newPixmap("background.png", Graphics.PixmapFormat.RGB565);
         Assets.logo = g.newPixmap("logo.png", Graphics.PixmapFormat.ARGB4444);
@@ -37,7 +37,7 @@ public class LoadingScreen extends Screen {
     }
 
     @Override
-    public void present(float deltaTime) {}
+    public void present(double deltaTime) {}
     @Override
     public void pause() {}
     @Override

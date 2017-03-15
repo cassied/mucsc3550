@@ -10,7 +10,7 @@ public class HelpScreen extends Screen {
     }
 
     @Override
-    public void update(float deltaTime) {
+    public void update(double deltaTime) {
         List<TouchEvent> touchEvents = game.getInput().getTouchEvents();
         int len = touchEvents.size();
         for(int i = 0; i < len; i++) {
@@ -26,12 +26,13 @@ public class HelpScreen extends Screen {
     }
 
     @Override
-    public void present(float deltaTime) {
+    public void present(double deltaTime) {
         Graphics g = game.getGraphics();
 
         g.drawPixmap(Assets.background, 0, 0);
         g.drawPixmap(Assets.help1, 64, 100);
         g.drawPixmap(Assets.buttons, 256, 410, 0, 64, 64, 64);
+
     }
 
     @Override
