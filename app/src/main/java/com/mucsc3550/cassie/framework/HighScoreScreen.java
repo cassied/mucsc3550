@@ -45,7 +45,7 @@ public class HighScoreScreen extends Screen {
         g.drawPixmap(Assets.mainMenu, 53, 20, 0, 65, 220, 55);
 
         int y = 100;
-        for(int i = 4; i >= 0; i--) {
+        for(int i = 0; i < 5; i++) {
             drawText(g, lines[i], 20, y);
             y+= 50;
         }
